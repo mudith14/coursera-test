@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+div {
+  width: 100px;
+  height: 50px;
+  background-color: magenta;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: vitamins;}
+#div2 {animation-timing-function: minerals;}
+#div3 {animation-timing-function: carbs;}
+#div4 {animation-timing-function: proteins;}
+#div5 {animation-timing-function: fats;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+</style>
+</head>
+<body>
+<dl>
+	<dt><h1 style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">Carbohydrates</h1></dt>
+	<dd><h4 style="font-family: 'Source Sans Pro', sans-serif; font-size: large;">They are called carbohydrates as they comprise carbon, hydrogen and oxygen at their chemical level. Carbohydrates are essential
+        nutrients 
+       which include sugars, fibers and starches.
+        </h4>
+    </dd>
+	</dl>
+    <dl>
+        <dt><h1 style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF">Proteins</h1></dt>
+        <dd><h4 style="font-family: 'Source Sans Pro', sans-serif; font-size: large;">Proteins are very large molecules composed of basic units called amino acids. In addition to containing carbon, hydrogen, 
+            and oxygen amino acids contain nitrogen.
+            
+            Protein molecules are large, complex molecules formed by one or more twisted and folded strands of amino acids.
+            </h4>
+        </dd>
+        </dl>
+        <dl>
+            <dt><h1 style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF">Fats</h1></dt>
+            <dd><h4 style="font-family: 'Source Sans Pro', sans-serif; font-size: large;">Fats are broken down into fatty acids and glycerol.
+                The body uses fat as a fuel source, and fat is the major storage form of energy in the body.
+                </h4>
+            </dd>
+            </dl>
+<table id="customers">
+  <tr>
+    <th>Macro nutrient</th>
+    <th>Sources</th>
+    <th>Functions</th>
+  </tr>
+  <tr>
+    <td id="c">Carbs</td>
+    <td>Healthy sources of carbohydrates include both food sources-animal and plant products, such as fresh fruits, vegetables, corn, potatoes,
+        milk and milk products.
+        Unhealthy sources include soda, white bread, artificial sugar, pastries, and other highly processed foods.
+	</td>
+    <td>Instant energy,Storing energy,digestion
+    </td>
+  </tr>
+  <tr>
+    <td id="p">Proteins</td>
+    <td>almonds,nuts,oats,brocolli,quinoa,lentils,pumpkin seeds,sprouts,peanuts,beans,soy,corn,guava,potatoes,cauliflower,peas</td>
+    <td>building and repairing,pH balance,providing structure,creating hormones and enzymes</td>
+  </tr>
+  <tr>
+    <td id="f">Fats</td>
+    <td>vegetables,vegetable spreads,oils,nuts,fish,animal fat.
+       </td>
+    <td>cell membrane health,storing energy,Transport and absorption,insulation</td>
+  </tr>
+</table>
+<br>
+<br>
+<div id="div1">vitamins</div>
+<div id="div2">minerals</div>
+<div id="div3">carbs</div>
+<div id="div4">proteins</div>
+<div id="div5">fats</div>
+
+</body>
+</html>
