@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/44b832351b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: verdana;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #add8e6;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #4a4a4a;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <p><img src="nutrilogo.jpg" alt="logo" width="15%"></p>
+  <h1 style="font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Orbitron', sans-serif;">NUTRITION GUIDE</h1>
+  <p style="font-family: 'Monoton', cursive; color:#0000cd; font-size: large;">(A referential advice for general health)</p>
+</div>
+
+<div class="topnav">
+  <a href="demo.html">Home</a>
+  <a href="#">About</a>
+  <a href="login.html">Login</a>
+  <a href="search.html" style="float:right">Search</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style="font-family: 'Monoton', cursive;"
+      ">Micro nutrients</h2>
+      <h5 style="font-family: 'Dosis', sans-serif; font-size: medium;">-Micronutrients provides essential components for metabolism to be carried out. They also build and repair damaged tissues in
+        order to control the body process.</h5>
+        <img src="micronutrients.jpg" alt="" width="900px" height="370px">
+      <p>They are:</p>
+      <p>1.<a href="n2.html">Vitamins</a>  2.<a href="n3.html">Minerals</a></p>
+    </div>
+    <div class="card">
+      <h2 style="font-family: 'Monoton', cursive;">Macro nutrients</h2>
+      <h5 style="font-family: 'Dosis', sans-serif; font-size: medium;">Macronutrients provide energy to a living being for the function of the metabolic system. They provide massive energy has it is converted used to obtain energy. </h5>
+      <img src="macronutrients.jpg" alt="" width="900px" height="330px">
+      <p>They are:</p>
+      <p>1.Carbohydrates  2.Proteins  3.Fats</p>
+      <p><a href="n4.html">view details</a></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2 style="font-family: 'Monoton', cursive;">Balanced diet</h2>
+      <img src="balanceddietimg.jpg" alt="" width="280px" height="240px">
+      <p>A week of healthy meal plans <a href="balanceddiet.html">click here</a></p>
+    </div>
+    <div class="card">
+      <h3 style="font-family: 'Monoton', cursive;">Incompatible food Combinations</h3>
+      <img src="ifcimage.jpg" alt="" width="280px" height="240px">
+      <p><a href="ifc.html">List out</a></p>
+    </div>
+    <div class="card">
+      <h3 style="font-family: 'Monoton', cursive;">Some Case Studies</h3>
+      <img src="caseimg.jpg" alt="" width="280px" height="240px">
+      <p><a href="casestudy.html">read more</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h5 align="left">This project is developed by:</h5>
+  <h2 style="text-align: left; font-family: 'Syne Mono', monospace;">Joshua daniel,Mudith reddy,Ajay</h2>
+  <p id="f" align="right" width="5px">
+    <i class="fa-brands fa-instagram fa-2xl"></i>
+    <i class="fa-brands fa-facebook fa-2xl"></i>
+    <i class="fa-brands fa-twitter fa-2xl"></i>
+    <i class="fa-brands fa-linkedin fa-2xl"></i>
+    </p>
+  <hr>
+  <h5 align="left">Copyright &copy; 2022</h5>
+  <h4 align="right">Privacy policy  Terms & Conditions</h4>
+  
+</div>
+
+</body>
+</html>
